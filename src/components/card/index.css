@@ -3,10 +3,14 @@
 
 .react-card-front {
   position: relative !important;
-  width: 270px !important; }
+  width: 300px !important; }
+
+.react-card-back {
+  top: -10px !important; }
 
 .member-card {
   cursor: pointer;
   margin: 10px;
-  width: 250px;
-  height: 170px; }
+  width: 270px;
+  height: 150px;
+  text-align: left; }

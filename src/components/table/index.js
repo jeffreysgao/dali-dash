@@ -14,6 +14,8 @@ export default class Table extends Component {
 					name={m.name}
 					message={m.message}
 					terms_on={m.terms_on}
+					project={m.project}
+					url={m.url}
 					iconUrl={m.iconUrl}
 				/>
 			)

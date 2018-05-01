@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import _ from 'lodash'
-import './index.css'
+import Card from '../card/index.js'
+import './index.scss'
 
 /*
 	Table displays member information as cards
@@ -9,16 +10,14 @@ export default class Table extends Component {
 	renderMembers() {
 		return _.map(this.props.data, (m) => {
 			return (
-				<div>
-					{`${m.name}, \n${m.message}, \n${m.terms_on}`}
-				</div>
+				<Card name={m.name} message={m.message} terms_on={m.terms_on} />
 			)
 		})
 	}
 
 	render() {
 		return (
-			<div class='member-table'>
+			<div className='member-table'>
 				{this.renderMembers()}
 			</div>
 		)

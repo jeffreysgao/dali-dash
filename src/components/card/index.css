@@ -1,0 +1,11 @@
+.react-card-front {
+  position: relative !important; }
+
+.react-card-back {
+  position: relative !important; }
+
+.card-front {
+  cursor: pointer; }
+
+.card-back {
+  cursor: pointer; }

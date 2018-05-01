@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchData } from '../../actions/index.js'
+import Table from '../table/index.js'
 import './index.css'
 
 /*
@@ -15,7 +16,7 @@ class Dashboard extends Component {
 	render() {
 		return (
 			<div>
-				{ JSON.stringify(this.props.data) }
+				<Table data={this.props.data} />
 			</div>
 		)
 	}

@@ -1,15 +1,15 @@
+.react-card-flip {
+	display: inline-block !important;
+}
+
 .react-card-front {
 	position: relative !important;
+	width: 270px !important;
 }
 
-.react-card-back {
-	position: relative !important;
-}
-
-.card-front {
+.member-card {
 	cursor: pointer;
-}
-
-.card-back {
-	cursor: pointer;
+	margin: 10px;
+	width: 250px;
+	height: 170px;
 }

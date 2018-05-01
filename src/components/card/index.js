@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import _ from 'lodash'
 import ReactCardFlip from 'react-card-flip'
+import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import './index.css'
 
+const IMG_URL = 'http://mappy.dali.dartmouth.edu/'
 
 /*
 	Card displays member information
 */
-export default class Card extends Component {
+export default class DaliCard extends Component {
 	constructor(props) {
 		super(props)
 
@@ -25,15 +27,33 @@ export default class Card extends Component {
 
 	render() {
 		return (
-			<ReactCardFlip isFlipped={this.state.isFlipped} style={{width: '200px'}}>
-        <div key="front" class="card-front" onClick={this.onClick}>
-          {`${this.props.name}, \n${this.props.message}, \n${this.props.terms_on}`}
-        </div>
+			<ReactCardFlip isFlipped={this.state.isFlipped}>
+				<Card
+					className='member-card'
+					key="front"
+					onClick={this.onClick}
+				>
+					<CardHeader
+						title={this.props.name}
+						avatar={`${IMG_URL}${this.props.iconUrl}`}
+					/>
+					<CardTitle
+						subtitle={this.props.message}
+						style={{height: '50px', position: 'absolute'}}
+					/>
+				</Card>
 
-        <div key="back" class="card-back" onClick={this.onClick}>
-          This is the back of the card.
-        </div>
-      </ReactCardFlip>
+				<Card
+					className='member-card'
+					key="back"
+					onClick={this.onClick}
+				>
+					<CardHeader title={this.props.name} />
+					<CardText>
+						{this.props.terms_on}
+					</CardText>
+				</Card>
+			</ReactCardFlip>
 		)
 	}
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import _ from 'lodash'
-import Card from '../card/index.js'
+import DaliCard from '../card/index.js'
 import './index.scss'
 
 /*
@@ -10,7 +10,12 @@ export default class Table extends Component {
 	renderMembers() {
 		return _.map(this.props.data, (m) => {
 			return (
-				<Card name={m.name} message={m.message} terms_on={m.terms_on} />
+				<DaliCard
+					name={m.name}
+					message={m.message}
+					terms_on={m.terms_on}
+					iconUrl={m.iconUrl}
+				/>
 			)
 		})
 	}

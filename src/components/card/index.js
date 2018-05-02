@@ -42,7 +42,7 @@ export default class DaliCard extends Component {
 				>
 					<CardHeader
 						title={this.props.name}
-						subtitle={ _.isEmpty(this.props.project) ? '' : this.props.project[0] }
+						subtitle={ _.isEmpty(this.props.project) || this.props.project[0] === '' ? '' : this.props.project[0] }
 						avatar={`${IMG_URL}${this.props.iconUrl}`}
 					/>
 					<CardTitle

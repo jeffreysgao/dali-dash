@@ -1,0 +1,16 @@
+.member-toolbar {
+	display: flex;
+	margin: 15px;
+	justify-content: center;
+
+	.toolbar-container {
+		width: 800px;
+		display: flex;
+		justify-content: space-around;
+
+		.filter-toolbar {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+	}
+}

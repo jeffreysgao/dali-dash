@@ -1,16 +1,21 @@
-.member-toolbar {
-	display: flex;
-	margin: 15px;
-	justify-content: center;
+.toolbar-container {
+	display: inline-block;
 
-	.toolbar-container {
-		width: 800px;
+	.member-toolbar {
 		display: flex;
-		justify-content: space-around;
+		margin: 20px;
+		width: 800px;
+		justify-content: center;
 
-		.filter-toolbar {
-			display: inline-block;
-			vertical-align: bottom;
+		.toolbar-container {
+			width: 800px;
+			display: flex;
+			justify-content: space-around;
+
+			.filter-toolbar {
+				display: inline-block;
+				vertical-align: bottom;
+			}
 		}
 	}
 }

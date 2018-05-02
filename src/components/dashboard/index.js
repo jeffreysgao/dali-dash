@@ -73,7 +73,7 @@ class Dashboard extends Component {
 	render() {
 		let data = this.getData()
 		return (
-			<div>
+			<div className='dashboard'>
 				<Toolbar
 					names={
 						_.map(this.props.data, (m) => {

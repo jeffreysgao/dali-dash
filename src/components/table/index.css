@@ -1,0 +1,4 @@
+.member-table {
+	display: flex;
+	flex-direction: row;
+}

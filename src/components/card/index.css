@@ -6,11 +6,13 @@
   width: 300px !important; }
 
 .react-card-back {
-  top: -10px !important; }
+  top: -10px !important;
+  color: #ffffff !important; }
 
 .member-card {
   cursor: pointer;
   margin: 10px;
   width: 270px;
   height: 150px;
-  text-align: left; }
+  text-align: left;
+  color: #ffffff !important; }

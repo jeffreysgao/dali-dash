@@ -52,19 +52,24 @@ export default class DaliCard extends Component {
 				</Card>
 
 				<Card
+					style={{backgroundColor: '#2c8fc9'}}
 					className='member-card'
 					key="back"
 					onClick={this.onClick}
 				>
-					<CardTitle
-						title={this.props.name}
-						subtitle={`Terms On: ${this.props.terms_on.toString()}`}
-						style={{height: '50px', width: '238px', textAlign: 'center'}}
-					/>
+					<div style={{padding: '16px', position: 'relative', height: '50px', width: '238px', textAlign: 'center' }}>
+						<span style={{fontSize: '24px', color: '#ffffff', display: 'block', lineHeight: '36px'}}>
+							{this.props.name}
+						</span>
+						<span style={{fontSize: '14px', color: '#f3fbff', display: 'block'}}>
+							{`Terms On: ${this.props.terms_on.toString()}`}
+						</span>
+					</div>
 					<CardActions style={{textAlign: 'center'}}>
 			      <FlatButton
 			      	label="About Me"
 			      	onClick={this.infoClick}
+			      	style={{color: '#ffffff'}}
 		      	/>
 			    </CardActions>
 				</Card>

@@ -72,9 +72,6 @@ class Dashboard extends Component {
 
 	render() {
 		let data = this.getData()
-
-		console.log(this.state.filterName)
-
 		return (
 			<div>
 				<Toolbar
